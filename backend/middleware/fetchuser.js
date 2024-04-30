@@ -6,12 +6,13 @@ const JWT_SECRET = 'Prerit';
 const fetchuser = (req, res, next) => {
 
     // get user from jwt token and add id to req object
-    const token = localStorage.getItem('token');
+    const token =   localStorage.getItem('token');
+    console.log("this is the tik",token) ;
 
-    if(!token)
-    {
-        return res.status(401).send({error: "Please authenticate using a valid token"});
-    }
+    // if(!token)
+    // {
+    //     return res.status(401).send({error: "Please authenticate using a valid token"});
+    // }
 
     try{
         const data = jwt.verify(token, JWT_SECRET);
@@ -21,6 +22,7 @@ const fetchuser = (req, res, next) => {
 
     }
     catch(error){
+        console.log(error)
         res.status(401).send({error: "Please Authenticate using a valid token"});
     }
 }

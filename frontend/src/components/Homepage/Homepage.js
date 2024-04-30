@@ -50,7 +50,7 @@ function Homepage() {
             <footer className="text-center text-lg-start" Style="background-color: #4e63d7; position:absolute; bottom:0vh;width:100%;">
 
                 <div className="text-center text-white p-3" Style="background-color: rgba(0, 0, 0, 0.2);">
-                    © 2023 Made With ❤ UniConnect
+                    © 2024 Made With ❤ UniConnect
 
                 </div>
 

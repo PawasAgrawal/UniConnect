@@ -29,6 +29,7 @@ export default function Editor(props) {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
+                
             },
 
             body: JSON.stringify({ title: credentials.title, question: value, tags: credentials.tags }),

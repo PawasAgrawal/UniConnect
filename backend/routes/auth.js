@@ -9,7 +9,7 @@ const bcrypt = require('bcryptjs');
 // const fetchuser = require('../middleware/fetchuser');
 var jwt = require('jsonwebtoken');
 
-const JWT_SECRET = 'oizdhvjldfkjtrpiht';
+const JWT_SECRET = 'Prerit';
 
 const router = express.Router();
 
@@ -61,11 +61,12 @@ router.post('/createuser', [
             }
         }
 
-        // console.log(data);
+        console.log(data);
         const authtaken = jwt.sign(data, JWT_SECRET);
-
+        console.log("this is auth token",authtaken)
         localStorage.setItem('token', authtaken);
         localStorage.setItem('username', req.body.username);
+        console.log("Token created")
         res.json({ 'success': authtaken, 'username': req.body.username,'date':user.date, 'userType': "user"});
         // res.json({ 'success': authtaken, 'username': req.body.username });
         // res.json({autotaken});
