@@ -26,7 +26,7 @@ if(process.env.NODE_ENV === "production"){
 }
 else{
     app.get('/', (req, res) => {
-        res.send('Hello TechMate')
+        res.send('Hello Mate')
     })
 }
 

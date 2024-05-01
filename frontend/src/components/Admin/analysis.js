@@ -24,7 +24,7 @@ export default function AdminAnalysis() {
 
    
     useEffect(() => {
-        fetch(`http://localhost:5000/api/question/fetchquestions`, {
+        fetch(`https://uniconnect-8tk4.onrender.com/api/question/fetchquestions`, {
             method: "POST",
             headers: {
                 'Content-Type': 'application/json'
@@ -63,7 +63,7 @@ export default function AdminAnalysis() {
     const navigate = useNavigate()
 
     const noOfQuestions = async () => {
-        await fetch('http://localhost:5000/api/admin/noOfQuestions', {
+        await fetch('https://uniconnect-8tk4.onrender.com/api/admin/noOfQuestions', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -82,7 +82,7 @@ export default function AdminAnalysis() {
     }
 
     const noOfusers =  async () => {
-        await fetch('http://localhost:5000/api/admin/noOfUsers', {
+        await fetch('https://uniconnect-8tk4.onrender.com/api/admin/noOfUsers', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -97,7 +97,7 @@ export default function AdminAnalysis() {
             )
         }
     const noOfAnswers = async () => {
-        await fetch('http://localhost:5000/api/admin/noOfAnswers', {
+        await fetch('https://uniconnect-8tk4.onrender.com/api/admin/noOfAnswers', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -114,7 +114,7 @@ export default function AdminAnalysis() {
     }
 
     const noOfAccept = async () => {
-        await fetch('http://localhost:5000/api/admin/noOfAccept', {
+        await fetch('https://uniconnect-8tk4.onrender.com/api/admin/noOfAccept', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -131,7 +131,7 @@ export default function AdminAnalysis() {
     }
     
     const fetchQuestions = async () => {
-        await fetch('http://localhost:5000/api/admin/questions', {
+        await fetch('https://uniconnect-8tk4.onrender.com/api/admin/questions', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -162,7 +162,7 @@ const [december, setDecember] = useState(0);
 useEffect(() => {
     async function fetchData() {
       try {
-        const response = await fetch('http://localhost:5000/api/admin/question-by-month');
+        const response = await fetch('https://uniconnect-8tk4.onrender.com/api/admin/question-by-month');
         const data = await response.json();
   
         data.forEach(item => {
@@ -224,7 +224,7 @@ useEffect(() => {
   useEffect(() => {
     async function fetchData() {
         try {
-            const response = await fetch(`http://localhost:5000/api/admin/question-by-year`);
+            const response = await fetch(`https://uniconnect-8tk4.onrender.com/api/admin/question-by-year`);
             const data = await response.json();
             data.forEach(item => {
                 const yearIndex = item._id - 2021;

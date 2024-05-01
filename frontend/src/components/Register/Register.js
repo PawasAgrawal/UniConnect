@@ -18,7 +18,7 @@ function Register() {
     console.log(credentials.password);
 
     //   if(credentials.password != credentials.passwordConfirm){alert("re enter password")};
-    const response = await fetch(`http://localhost:5000/api/auth/createuser`, {
+    const response = await fetch(`https://uniconnect-8tk4.onrender.com/api/auth/createuser`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'

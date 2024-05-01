@@ -21,7 +21,7 @@ export default function Adminanswer() {
 
 
     const fetchAllFilteredAnswers = async () => {
-        const response = await fetch(`http://localhost:5000/api/answer/fetchAllFilteredAnswers`, {
+        const response = await fetch(`https://uniconnect-8tk4.onrender.com/api/answer/fetchAllFilteredAnswers`, {
             method: "POST",
             headers: {
                 'Content-Type': 'application/json'
@@ -35,7 +35,7 @@ export default function Adminanswer() {
 
     const [usedTags, setUsedTags] = useState([]);
     useEffect(() => {
-        fetch(`http://localhost:5000/api/answer/givenAllAnswersTags/`, {
+        fetch(`https://uniconnect-8tk4.onrender.com/api/answer/givenAllAnswersTags/`, {
             method: "POST",
             headers: {
                 'Content-Type': 'application/json'
@@ -54,7 +54,7 @@ export default function Adminanswer() {
 
     // This function will find the No. of answers given by a User
     useEffect(() => {
-        fetch(`http://localhost:5000/api/answer/fetchUseranswer`, {
+        fetch(`https://uniconnect-8tk4.onrender.com/api/answer/fetchUseranswer`, {
             method: "POST",
             headers: {
                 'Content-Type': 'application/json'

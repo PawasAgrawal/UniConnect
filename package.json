@@ -1,12 +1,12 @@
 {
-  "name": "techmate",
+  "name": "uniconnect",
   "version": "1.0.0",
-  "description": "Techmate - Your Learning Companion",
+  "description": "uniconnect - Your Learning Companion",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node backend/index.js",
-    "server": "nodemon backend/index.js"
+    "server": "node backend/index.js"
   },
   "author": "",
   "license": "ISC",

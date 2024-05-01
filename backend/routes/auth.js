@@ -9,7 +9,7 @@ const bcrypt = require('bcryptjs');
 // const fetchuser = require('../middleware/fetchuser');
 var jwt = require('jsonwebtoken');
 
-const JWT_SECRET = 'Prerit';
+const JWT_SECRET = 'uniconnect';
 
 const router = express.Router();
 

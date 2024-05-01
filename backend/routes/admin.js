@@ -13,7 +13,7 @@ var jwt = require('jsonwebtoken');
 const Question = require("../models/Question")
 const Answer = require("../models/Answer")
 
-const JWT_SECRET = 'Prerit';
+const JWT_SECRET = 'uniconnect';
 
 router.post('/createuser', [
     body('username', 'Name Must have atleast 3 characters').isLength({ min: 3 }),
@@ -58,7 +58,7 @@ router.post('/createuser', [
         }
 
         console.log(data);
-        const authtaken = jwt.sign(data, "Prerit");
+        const authtaken = jwt.sign(data, "uniconnect");
 
         localStorage.setItem('token', authtaken);
         localStorage.setItem('username', req.body.username);
