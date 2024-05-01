@@ -32,7 +32,7 @@ function Homepage() {
                                 <p>Find the best answer to your technical question, help others answer theirs. UniConnect is a community-based space to find and contribute answers to technical challenges.</p>
                             </div>
                             <div className="text-left">
-                                <NavLink to="/questions" className="btn btn-primary started-btn">Get Started</NavLink>
+                                <NavLink to="/questions" className="btn btn-success started-btn">Get Started</NavLink>
 
                             </div>
                         </div>
@@ -47,7 +47,7 @@ function Homepage() {
 
             </header>
 
-            <footer className="text-center text-lg-start" Style="background-color: #4e63d7; position:absolute; bottom:0vh;width:100%;">
+            <footer className="text-center text-lg-start" Style="background-color: #198754; position:absolute; bottom:0vh;width:100%;">
 
                 <div className="text-center text-white p-3" Style="background-color: rgba(0, 0, 0, 0.2);">
                     © 2024 Made With ❤ UniConnect

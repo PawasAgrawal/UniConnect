@@ -16,7 +16,7 @@ var iconstyle = {
 }
 var title = {
   // color: "lightgreen",
-  color: "#0D6EFD",
+  color: "#198754",
 }
 export default function Navbar() {
   
@@ -124,7 +124,7 @@ export default function Navbar() {
           <div className="collapse navbar-collapse" id="navbarScroll" >
             <form className="d-flex" style={{ width: 500 }} onSubmit={searchQuestion}>
               <input className="form-control me-2" id="searchQue" type="search" placeholder="Search" aria-label="Search" />
-              <button className="btn btn-outline-primary" type="submit">Search</button>
+              <button className="btn btn-outline-success" type="submit">Search</button>
 
             </form>
             <div className="searchbar">
@@ -154,15 +154,15 @@ export default function Navbar() {
                 ?
                 (
                   <li class="nav-item">
-                    <button className='btn btn-outline-primary' onClick={logout}>Logout</button>
+                    <button className='btn btn-outline-success' onClick={logout}>Logout</button>
                   </li>
                 )
                 :
                 (<><li class="nav-item">
-                  <NavLink className="nav-link" to="/login" style={{ color: 'black' }}><button className='btn btn-outline-primary'>Login</button></NavLink>
+                  <NavLink className="nav-link" to="/login" style={{ color: 'black' }}><button className='btn btn-outline-success'>Login</button></NavLink>
                 </li>
                   <li class="nav-item">
-                    <NavLink className="nav-link" to="/register" style={{ color: 'black' }}><button className='btn btn-primary'>Register</button></NavLink>
+                    <NavLink className="nav-link" to="/register" style={{ color: 'black' }}><button className='btn btn-success'>Register</button></NavLink>
                   </li></>)
               }
 

@@ -68,8 +68,8 @@ export default function Posts({ posts }) {
                                     <p Style="font-size:25px;">{parse(answer.answer)}</p>
                                 </div>
                                 <div Style="position: absolute; right: 7%;" className='mt-5'>
-                                    <NavLink className="mt-2" to={{ pathname: `/updateans/${answer._id}` }} Style="font-size:15px;"><i Style="padding:5px; color:#0074CC" className="fa fa-edit" aria-hidden="true"></i></NavLink>
-                                    <NavLink onClick={()=>deleteAns(answer._id)}><i Style="padding:25px; color:#0074CC" className="fa fa-trash" aria-hidden="true"></i></NavLink>
+                                    <NavLink className="mt-2" to={{ pathname: `/updateans/${answer._id}` }} Style="font-size:15px;"><i Style="padding:5px; color:#198754C" className="fa fa-edit" aria-hidden="true"></i></NavLink>
+                                    <NavLink onClick={()=>deleteAns(answer._id)}><i Style="padding:25px; color:#198754" className="fa fa-trash" aria-hidden="true"></i></NavLink>
                                 </div>
                                 <div className="author">
                                     <div className="author-details">

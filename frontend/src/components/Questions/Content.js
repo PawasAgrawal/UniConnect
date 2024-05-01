@@ -400,7 +400,7 @@ export default function Content(props) {
 
 
                     {
-                        loginstatus === true ? (<button type='submit' className="btn btn-primary mt-5 mb-3">Post Your Answer</button>) : <></>
+                        loginstatus === true ? (<button type='submit' className="btn btn-success mt-5 mb-3">Post Your Answer</button>) : <></>
                     }
 
                 </form>

@@ -213,11 +213,11 @@ export default function Adminquestion() {
                 </div>
 
                 <div class="d-flex flex-column flex-shrink-0 col-md-10">
-                    <NavLink to={{ pathname: `/question/${question._id}` }} className="card-title" Style="text-decoration:none;color:#0074CC"><h4>{question.title}</h4></NavLink>
+                    <NavLink to={{ pathname: `/question/${question._id}` }} className="card-title" Style="text-decoration:none;color:#198754"><h4>{question.title}</h4></NavLink>
                     <small Style="font-size:1px;">{parse(question.question)[0]}</small>
                  
-                    <div className='mt-3'>{question.tags.split(" ").map(tag => <small className='mx-2 px-2 py-1' Style="color:hsl(205,47%,42%); background-color: hsl(205,46%,92%); border-radius:5px;">{tag}</small>)}</div>
-                    <small className='d-flex flex-row-reverse'> asked {question.date.slice(0, 10)} at {question.date.slice(12, 16)} <p Style="color:#0074CC">{question.postedBy}&nbsp;</p></small>
+                    <div className='mt-3'>{question.tags.split(" ").map(tag => <small className='mx-2 px-2 py-1' Style="color:#198754; background-color: #198754); border-radius:5px;">{tag}</small>)}</div>
+                    <small className='d-flex flex-row-reverse'> asked {question.date.slice(0, 10)} at {question.date.slice(12, 16)} <p Style="color:#198754">{question.postedBy}&nbsp;</p></small>
                 </div>
             </div>
             <Button  variant="outlined" startIcon={<DeleteIcon />} onClick={() => deleteQuestion(question._id)}>delete</Button>

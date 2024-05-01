@@ -43,7 +43,7 @@
 }
 
 .question-answer> a{
-    color: #0151f0d8;
+    color: #198754;
     font-size:1.1rem;
     margin-bottom: 10px;
 }
@@ -51,7 +51,7 @@
 .question-tags{
     margin:10px 5px;
     padding :5px 10px;
-    background-color: #0151f03d;
+    background-color: #018548;
     border-radius: 3px;
 }
 
@@ -74,7 +74,7 @@
 .author-details > p{
     margin-left: 5px;
     font-size:small;
-    color:#0151f0d8;
+    color:#198754;
 }
 
 /* css of filter pop-up and card  */

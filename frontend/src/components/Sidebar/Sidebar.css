@@ -66,13 +66,13 @@
  }
 
  .link-tag:hover{
-    border-right: 5px solid #0D6EFD;
+    border-right: 5px solid #198754;
  }
 
  .link-tag > .MuiSvgIcon-root{
     font-size: 18px;
     margin-right: 5px;
-    color: #0D6EFD;
+    color: #198754;
  }
 
  .tags{

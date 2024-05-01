@@ -28,7 +28,7 @@
 
 button{
     padding: 10px;
-    background-color: #0095ff;
+    background-color: #198754;
     color: #fff;
     border: 2px solid #007cd446;
     outline: none;
@@ -75,7 +75,7 @@ button{
     background-color: #007cd446;
     /* font-size: small; */
     align-items: center;
-    color: #007cd4;
+    color: #198754;
     cursor: pointer;
 }
 .filter-text{

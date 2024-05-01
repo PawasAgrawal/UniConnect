@@ -113,10 +113,10 @@ export default function Posts({ posts }) {
                             </div>
 
                             <div className="question-answer">
-                                <NavLink to={{ pathname: `/answer/${question._id}` }} className="card-title" Style="text-decoration:none;color:#0074CC"><h4>{question.title}</h4></NavLink>
+                                <NavLink to={{ pathname: `/answer/${question._id}` }} className="card-title" Style="text-decoration:none;color:#198754"><h4>{question.title}</h4></NavLink>
                                 <div Style="position: absolute; right: 7%;">
-                                    <NavLink to={{ pathname: `/updateque/${question._id}` }}><i Style="padding:5px; color:#0074CC" className="fa fa-edit" aria-hidden="true"></i></NavLink>
-                                    <NavLink onClick={()=>deleteQue(question._id)}><i Style="padding:25px; color:#0074CC" className="fa fa-trash" aria-hidden="true"></i></NavLink>
+                                    <NavLink to={{ pathname: `/updateque/${question._id}` }}><i Style="padding:5px; color:#198754" className="fa fa-edit" aria-hidden="true"></i></NavLink>
+                                    <NavLink onClick={()=>deleteQue(question._id)}><i Style="padding:25px; color:#198754" className="fa fa-trash" aria-hidden="true"></i></NavLink>
                                     {/* <button onClick={deleteQue(question._id)}><i Style="padding:5px; color:#0074CC" className="fa fa-trash" aria-hidden="true"></i></button> */}
                                 </div>
                                 <div style={{ width: "90%", }}>
@@ -127,14 +127,14 @@ export default function Posts({ posts }) {
                                                                         <span className="question-tags">frontend</span>
                                                                         <span className="question-tags">development</span>
                                                                     </div> */}
-                                <div className='mt-3'>{question.tags.split(" ").map(tag => <span className='question-tags' Style="color:hsl(205,47%,42%); background-color: hsl(205,46%,92%); border-radius:5px;">{tag}</span>)}</div>
+                                <div className='mt-3'>{question.tags.split(" ").map(tag => <span className='question-tags' Style="color:#198754; background-color: hsl(152,90%,75%); border-radius:5px;">{tag}</span>)}</div>
                                 <div className="author">
                                     {/* <small> asked {question.date.slice(0, 10)} at {question.date.slice(12, 16)} </small>
                                                                         <div className="author-details">
                                                                           
                                                                             <p>{question.postedBy}</p>
                                                                         </div> */}
-                                    <small className='d-flex flex-row-reverse'>asked {question.date.slice(0, 10)} at {question.date.slice(12, 16)} <p Style="color:#0074CC">{question.postedBy} &nbsp;</p></small>
+                                    <small className='d-flex flex-row-reverse'>asked {question.date.slice(0, 10)} at {question.date.slice(12, 16)} <p Style="color:#198754">{question.postedBy} &nbsp;</p></small>
 
                                 </div>
                             </div>

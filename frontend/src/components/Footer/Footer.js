@@ -7,7 +7,7 @@ import { NavLink } from 'react-router-dom'
 // }
 var title = {
     // color: "lightgreen",
-    // color: "#0D6EFD",
+    // color: "#198754",
     color: "white"
 }
 export default function Footer() {
